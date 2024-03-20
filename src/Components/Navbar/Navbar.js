@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import me_in_trad from "../../Assets/Images/final year photoshoot.jpg";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { Turn as Hamburger } from "hamburger-react";
+import { Divide as Hamburger } from "hamburger-react";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -12,11 +12,13 @@ function Navbar() {
   };
 
   const navigationLinks = [
-    { path: "/", text: "Home", color: "#7D11F9" },
-    { path: "/About", text: "About", color: "#7D11F9" },
-    { path: "/Projects", text: "Projects", color: "#7D11F9" },
-    { path: "/Partners", text: "Partners", color: "#7D11F9" },
-    { path: "/Contact", text: "Contact", color: "#7D11F9" },
+    { path: "/", text: "Home", color: "#E83E8C" },
+    { path: "/About", text: "About", color: "#E83E8C" },
+    { path: "/Services", text: "Services", color: "#E83E8C" },
+    { path: "/Projects", text: "Projects", color: "#E83E8C" },
+    { path: "/Partners", text: "Partners", color: "#E83E8C" },
+    { path: "/Contact", text: "Contact", color: "#E83E8C" },
+
   ];
 
   const location = useLocation();
@@ -48,7 +50,7 @@ function Navbar() {
               <Link
                 to={link.path}
                 className="navLink"
-                style={(getActiveLinkStyle(link), { textDecoration: "none" })}
+                style={getActiveLinkStyle(link)}
               >
                 {link.text}
               </Link>

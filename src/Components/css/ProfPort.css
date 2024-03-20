@@ -19,8 +19,8 @@
   font-size: 18px;
 }
 .ProfPort-h1 {
-    font-size: 40px;
-    font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
 }
 .ProfPort-p {
   font-size: 19.2px;
@@ -45,7 +45,7 @@
   height: 57px;
   background-color: #25178f;
 }
-@media only screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .ProfPort {
     text-align: center;
   }
@@ -59,4 +59,17 @@
     /* line-height: 2rem; */
     font-size: 30px;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .ProfPort {
+    text-align: center;
+  }
+  .ProfPort-button {
+    margin: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
 }

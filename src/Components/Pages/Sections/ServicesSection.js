@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 import IT_Support from "../../../Assets/Images/4230745.png";
 import ram from "../../../Assets/Images/ram.png";
 import research_analysis from "../../../Assets/Images/market-analysis.png";
-import arrow from "../../../Assets/Images/arrow-right.png"
+
 
 const ServicesSection = () => {
 
   return (
     <section className="ServicesSection">
       <div className="h3-and-h1">
-        <h1 className="ServicesSection-h3" style={{ color: "#8C89A2" }}>
+        <h3 className="ServicesSection-h3" style={{ color: "#8C89A2" }}>
           {"SERVICES"}
-        </h1>
+        </h3>
         <h1 className="ServicesSection-h1" style={{ color: "#3F3A64" }}>
           {"Turning Concepts into Tangible Solutions"}
         </h1>
@@ -35,7 +35,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+              to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -56,7 +56,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+               to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -77,7 +77,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+               to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -98,7 +98,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+               to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -120,7 +120,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+               to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -142,7 +142,7 @@ const ServicesSection = () => {
               }
             </p>
             <Link
-              to="https://www.linkedin.com/in/akinolaoshinubi/"
+               to="/Services"
               className="read-more-link"
               style={{ textDecoration: "none", color: "#3F3A64" }}
             >
@@ -150,9 +150,6 @@ const ServicesSection = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="fourth-box all-boxes"></div>
-        <div className="first-box all-boxes"></div>
-        <div className="sixth-box all-boxes"></div> */}
       </div>
     </section>
   );

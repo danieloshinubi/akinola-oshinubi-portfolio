@@ -8,6 +8,7 @@ import Projects from "./Components/Pages/Projects";
 import Partners from "./Components/Pages/Partners";
 import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Footer/Footer";
+import Services from "./Components/Pages/Services";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" Component={LandingPage} />
           <Route path="/Home" Component={LandingPage} />
           <Route path="/About" Component={About} />
+          <Route path="/Services" Component={Services} />
           <Route path="/Projects" Component={Projects} />
           <Route path="/Partners" Component={Partners} />
           <Route path="/Contact" Component={Contact} />

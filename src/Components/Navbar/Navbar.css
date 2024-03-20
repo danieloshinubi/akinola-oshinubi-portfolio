@@ -10,6 +10,43 @@
   font-family: norican;
   src: url(../../../Norican-Regular.ttf);
 }
+/* Animations */
+.left-IntroSection,
+.right-IntroSection {
+  opacity: 0;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-IntroSection {
+  animation-name: slideInFromLeft;
+}
+
+.right-IntroSection {
+  animation-name: slideInFromRight;
+}
+/* Animations */
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -64,6 +101,45 @@
   /* color: #7D11F9;   */
 }
 @media only screen and (max-width: 480px) {
+/* Animations */
+.left-IntroSection,
+.right-IntroSection {
+  opacity: 0;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-IntroSection {
+  animation-name: slideInFromLeft;
+}
+
+.right-IntroSection {
+  animation-name: slideInFromRight;
+}
+/* Animations */
+
+
   .Navbar {
     display: flex;
     flex-direction: column;

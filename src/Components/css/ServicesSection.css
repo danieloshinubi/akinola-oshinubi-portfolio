@@ -1,0 +1,92 @@
+@font-face {
+  font-family: jost;
+  src: url(../../../Jost-VariableFont_wght.ttf);
+}
+.ServicesSection {
+  font-family: jost;
+  width: 80%;
+  /* display: block; */
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.h3-and-h1 {
+ 
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+
+  /* border-radius: 10px; */
+}
+.all-boxes {
+  width: 372px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: rgba(147, 107, 232, 0.1);
+  margin-top: 5%;
+}
+.all-boxes h1 {
+  color: #3f3a64;
+  font-size: 24px;
+}
+.all-boxes h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: #3f3a64;
+  opacity: 0.3;
+}
+.all-boxes img {
+  width: 60px;
+  height: 60px;
+}
+.top-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.alignment-box {
+  width: 90%;
+  margin: auto;
+  padding: 5% 5% 5% 5%;
+}
+.read-more-link {
+  position: relative;
+  font-weight: 700;
+ 
+}
+.read-more-link::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Adjust width as needed */
+  height: 2px; /* Adjust height as needed */
+  background-color: #7d11f9; /* Change color as desired */
+  bottom: 0; /* Position the underline at the bottom */
+  left: 0;
+  margin: 0px 0;
+}
+.ServicesSection-h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 480px) {
+    .ServicesSection-h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .all-boxes h1 {
+        color: #3f3a64;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .all-boxes {
+      text-align: center;
+      }
+
+}

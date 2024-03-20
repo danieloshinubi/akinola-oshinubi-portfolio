@@ -1,0 +1,62 @@
+@font-face {
+  font-family: jost;
+  src: url(../../../Jost-VariableFont_wght.ttf);
+}
+.full-ProfPort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.ProfPort {
+  font-family: jost;
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10%;
+}
+.ProfPort-h3 {
+  font-size: 18px;
+}
+.ProfPort-h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.ProfPort-p {
+  font-size: 19.2px;
+  color: #696969;
+}
+
+.ProfPort-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 165px;
+  height: 54px;
+  background-color: #7d11f9;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.ProfPort-button:hover {
+  width: 170px;
+  height: 57px;
+  background-color: #25178f;
+}
+@media only screen and (max-width: 480px) {
+  .ProfPort {
+    text-align: center;
+  }
+  .full-ProfPort {
+    height: auto;
+  }
+  .ProfPort-button {
+    margin: auto;
+  }
+  .ProfPort-h1 {
+    /* line-height: 2rem; */
+    font-size: 30px;
+  }
+}

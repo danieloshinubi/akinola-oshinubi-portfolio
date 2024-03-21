@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <p style={{ color: "#ffff" }}>
-        &copy; 2024 Akinola Oshinubi's Portfolio. All Rights Reserved.
+        &copy; {"2024 Akinola Oshinubi's Portfolio. All Rights Reserved."}
       </p>
     </footer>
   );

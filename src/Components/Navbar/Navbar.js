@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import me_in_trad from "../../Assets/Images/final year photoshoot.jpg";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { Divide as Hamburger } from "hamburger-react";
@@ -18,7 +17,6 @@ function Navbar() {
     { path: "/Projects", text: "Projects", color: "#E83E8C" },
     { path: "/Partners", text: "Partners", color: "#E83E8C" },
     { path: "/Contact", text: "Contact", color: "#E83E8C" },
-
   ];
 
   const location = useLocation();

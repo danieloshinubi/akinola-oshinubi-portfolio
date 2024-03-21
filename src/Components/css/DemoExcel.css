@@ -1,14 +1,9 @@
-@font-face {
-  font-family: jost;
-  src: url(../../../Jost-VariableFont_wght.ttf);
-}
-/* TAGS  */
+/* TAGS are used in this css file */
 .full-DemoExcel {
   height: auto;
   display: flex;
 }
 .DemoExcel {
-  font-family: jost;
   width: 80%;
   margin: auto;
   text-align: center;

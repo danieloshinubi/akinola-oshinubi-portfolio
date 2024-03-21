@@ -1,8 +1,3 @@
-@font-face {
-  font-family: jost;
-  src: url(../../../Jost-VariableFont_wght.ttf);
-}
-
 /* Animations */
 .left-IntroSection,
 .right-IntroSection {
@@ -12,7 +7,7 @@
 }
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-30%);
     opacity: 0;
   }
   100% {
@@ -23,7 +18,7 @@
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(30%);
     opacity: 0;
   }
   100% {
@@ -48,7 +43,6 @@
   height: 700px;
 }
 .IntroSection {
-  font-family: jost;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -167,33 +161,26 @@
     height: 450px;
   }
   .left-IntroSection {
-
     line-height: 2rem;
   }
   .left-IntroSection-second-p {
     font-size: 15px;
   }
   .left-IntroSection-second-button {
-
     height: 44px;
-
   }
 }
 @media (min-width: 1025px) and (max-width: 1400px) {
-    .left-IntroSection-first-p {
-        font-size: 27px;
-      }
-      .left-IntroSection {
-
-        line-height: 2rem;
-      }
-      .left-IntroSection-second-button {
-
-        height: 44px;
-    
-      }
-      .full-IntroSection {
-
-        height: 450px;
-      }
+  .left-IntroSection-first-p {
+    font-size: 27px;
+  }
+  .left-IntroSection {
+    line-height: 2rem;
+  }
+  .left-IntroSection-second-button {
+    height: 44px;
+  }
+  .full-IntroSection {
+    height: 450px;
+  }
 }

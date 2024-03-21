@@ -1,14 +1,6 @@
 @font-face {
-  font-family: jost;
-  src: url(../../../Jost-VariableFont_wght.ttf);
-}
-@font-face {
   font-family: jost-italic;
   src: url(../../../Jost-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: norican;
-  src: url(../../../Norican-Regular.ttf);
 }
 
 .Navbar {
@@ -17,8 +9,6 @@
   align-items: center;
   width: 80%;
   margin: auto;
-  font-family: jost;
-  /* margin-top: 2%; */
 }
 .Nav-imgLink-h1 {
   font-family: jost-italic;
@@ -43,6 +33,7 @@
   display: flex;
   /* width: 50%; */
   justify-content: space-between;
+  font-family: jost-italic;
   /* align-items: center; */
 }
 .nav-li {
@@ -104,46 +95,44 @@
   }
 }
 @media only screen and (max-width: 768px) {
-    .Navbar {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        /* margin-top: 2%; */
-      }
-      .nav-menu {
-        display: none;
-      }
-    
-      .nav-menu.is-open {
-        display: block;
-      }
-    
-      .Navbar {
-        width: 90%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-      }
-    
-      .nav-hamburger {
-        display: block;
-      }
-      .Nav-imgLink {
-        width: 100%;
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* margin-top: 2%; */
+  }
+  .nav-menu {
+    display: none;
+  }
 
-        justify-content: space-between;
-      }
-      .nav-ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 24px;
-        line-height: 4rem;
+  .nav-menu.is-open {
+    display: block;
+  }
 
-      }
+  .Navbar {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
+  .Nav-imgLink {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    line-height: 4rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
-    .nav-menu {
-   
-        width: 60%;
-      }
+  .nav-menu {
+    width: 60%;
+  }
 }

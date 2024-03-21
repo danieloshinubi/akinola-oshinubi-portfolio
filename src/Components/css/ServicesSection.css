@@ -1,9 +1,10 @@
-@font-face {
+/* TAGS WERE TAGGED IN THIS CSS FILE */
+/* @font-face {
   font-family: jost;
   src: url(../../../Jost-VariableFont_wght.ttf);
-}
+} */
 .ServicesSection {
-  font-family: jost;
+  /* font-family: jost; */
   width: 80%;
   /* display: block; */
   margin: auto;

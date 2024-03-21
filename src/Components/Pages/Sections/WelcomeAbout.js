@@ -1,29 +1,46 @@
 import React from "react";
-import "../../css/AboutMeSection.css";
 import about_me_pic from "../../../Assets/Images/about me .jpg";
+import "../../css/WelcomeAbout.css";
 import { Link } from "react-router-dom";
 
-const AboutMeSection = () => {
+const WelcomeAbout = () => {
+  const infoData = [
+    { id: "Name: ", answer: "Akinola Daniel Oshinubi" },
+    { id: "Location: ", answer: "Lekki, Lagos State, Nigeria" },
+    { id: "Age:  ", answer: "22 Years" },
+    { id: "Email: ", answer: "danieloshinubi@gmail.com" },
+    {
+      id: "Graduate:  ",
+      answer: "Babcock University, Bsc (Hons) Computer Science, Zircon 23'",
+    },
+  ];
   return (
-    <section className="aboutMe">
-      <div className="aboutMe-imgSide">
+    <section className="whole-about-intro">
+      <div className="image-side">
         <img src={about_me_pic} alt="" />
       </div>
-      <div className="aboutMe-wordSide">
-        <h3 className="aboutMe-wordSide-h3" style={{ color: "#8C89A2" }}>
-          {"ABOUT ME"}
+
+      <div className="word-side">
+        <h3 className="word-side-h3" style={{ color: "#8C89A2" }}>
+          {"WELCOME, I AM A TECH SAVVY PROBLEM SOLVER"}
         </h3>
-        <h1 className="aboutMe-wordSide-first-h1" style={{ color: "#3F3A64" }}>
-          {"Akinola Oshinubi "}
+        <h1 className="word-side-h1" style={{ color: "#3F3A64" }}>
+          {"With Over 3 Years of Professional Experience"}
         </h1>
-        <p className="aboutMe-wordSide-second-h3" style={{ color: "#696969" }}>
-          {"I am a skilled "}
-          <b>{"Developer"}</b> {"with a strong focus on "}
-          <b>{"User Satisfaction"}</b>.{" "}
+        <p className="word-side-p" style={{ color: "#696969" }}>
           {
-            "Proficient in HTML, CSS, JavaScript, Tailwind CSS, SQL, React, Helpesk Support, Network Security, Information Security, Comptia A+, and seamless user experiences across platforms. With expertise in Front-End & System Engineering, I deliver dynamic applications. I am a proactive problem solver, quick learner, and collaborative team player. Passionate about staying updated with the latest technologies and driving business success. Download my resume to learn more!."
+            "I deliver high-quality solutions that meet my clients' needs. With a strong technical background and a passion for innovation, I create efficient web applications. My expertise ensures exceptional user experiences and seamless functionality."
           }
         </p>
+        <hr />
+        <div>
+          {infoData.map((info) => (
+            <p style={{ color: "#696969" }}>
+              <b>{info.id} </b>
+              <span>{info.answer}</span>
+            </p>
+          ))}
+        </div>
         <Link to="/Projects" style={{ textDecoration: "none" }}>
           <button
             className="resume-button"
@@ -53,4 +70,4 @@ const AboutMeSection = () => {
   );
 };
 
-export default AboutMeSection;
+export default WelcomeAbout;

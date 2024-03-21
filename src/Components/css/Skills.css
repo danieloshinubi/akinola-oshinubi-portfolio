@@ -1,0 +1,88 @@
+.full-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.Skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.arrange {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.skill-icons {
+  width: 100px;
+  height: 100px;
+}
+
+.skill-icons img {
+  width: 70%;
+  height: 70%;
+}
+.skill-checkbox {
+  width: 80%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .Skills {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .full-skills {
+    height: auto;
+  }
+  .skill-checkbox {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .Skills {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .full-skills {
+    height: auto;
+  }
+  .skill-checkbox {
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .full-skills {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: auto;
+  }
+  .Skills {
+
+    margin-top: 10%;
+  }
+  .skill-icons {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skill-icons img {
+    width: 70%;
+    height: 70%;
+  }
+  .skill-checkbox {
+    width: 50%;
+  }
+  .vast-know {
+    width: 50%;
+    /* line-height: 1rem; */
+  }
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
+}

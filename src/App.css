@@ -1,4 +1,8 @@
-/* .App{
-    margin: 0;
-    padding: 0;
-} */
+@font-face {
+  font-family: jost;
+  src: url(../Jost-VariableFont_wght.ttf);
+}
+
+.App {
+  font-family: jost;
+}

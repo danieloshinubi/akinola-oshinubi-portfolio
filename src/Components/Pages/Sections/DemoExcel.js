@@ -4,9 +4,14 @@ import "../../css/DemoExcel.css";
 import pro_in_prog from "../../../Assets/Images/progression.png";
 import satisCli from "../../../Assets/Images/rating.png";
 import awardRe from "../../../Assets/Images/award.png";
-import { Link } from "react-router-dom";
 
 const DemoExcel = () => {
+  const DemoData = [
+    { img: pro_in_prog, text: "Projects in Progress" },
+    { img: comPro, text: "Completed Projects" },
+    { img: satisCli, text: "Satisfied Clients" },
+    { img: awardRe, text: "Awards Received" },
+  ];
   return (
     <div
       className="full-DemoExcel"
@@ -16,24 +21,12 @@ const DemoExcel = () => {
         <h3>{"IMPRESSIVE TRACK RECORD"}</h3>
         <h1>{"Demonstrating Excellence"}</h1>
         <div className="Demo-boxes">
-          {/* <Link to="/Projects" style={{ textDecoration: "none" }}> */}
+          {DemoData.map((item) => (
             <div>
-              <img src={comPro} alt="" />
-              <p>{"Completed Projects"}</p>
+              <img src={item.img} alt={item.text} />
+              <p>{item.text}</p>
             </div>
-          {/* </Link> */}
-          <div>
-            <img src={pro_in_prog} alt="" />
-            <p>{"Projects in Progress"}</p>
-          </div>
-          <div>
-            <img src={satisCli} alt="" />
-            <p>{"Satisfied Clients"}</p>
-          </div>
-          <div>
-            <img src={awardRe} alt="" />
-            <p>{"Awards Received"}</p>
-          </div>
+          ))}
         </div>
       </section>
     </div>

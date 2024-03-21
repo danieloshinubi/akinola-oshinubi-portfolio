@@ -1,0 +1,87 @@
+/* TAGS WERE CALLED IN THIS CSS FILE img */
+.whole-about-intro {
+  display: flex;
+
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.image-side {
+  width: 40%;
+}
+.word-side {
+  width: 50%;
+}
+.image-side img {
+  width: 100%;
+  border-radius: 15px;
+}
+.word-side-h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .whole-about-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .image-side {
+    width: 80%;
+  }
+  .word-side {
+    width: 80%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .whole-about-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .image-side {
+    width: 80%;
+  }
+  .word-side {
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .whole-about-intro {
+    justify-content: space-between;
+  }
+  .image-side {
+    width: 45%;
+  }
+  .word-side {
+    width: 50%;
+  }
+  .image-side img {
+    width: 100%;
+  }
+  .word-side-h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .whole-about-intro {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+  .image-side {
+    width: 45%;
+  }
+  .word-side {
+    width: 50%;
+  }
+
+  .word-side-h1 {
+    font-size: 30px;
+  }
+}

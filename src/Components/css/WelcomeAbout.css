@@ -36,7 +36,11 @@
   }
   .word-side {
     width: 80%;
+  }.word-side-h1 {
+    font-size: 32px;
+    font-weight: 500;
   }
+  
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .whole-about-intro {

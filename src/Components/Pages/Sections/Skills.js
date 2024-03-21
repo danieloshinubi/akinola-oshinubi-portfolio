@@ -13,6 +13,9 @@ import odoo from "../../../Assets/Images/odoo-removebg-preview.png";
 import endpoint from "../../../Assets/Images/endpoint_central-removebg-preview.png";
 import intune from "../../../Assets/Images/intuneportal.png";
 import ME from "../../../Assets/Images/MEdownload-removebg-preview.png";
+import vercel from "../../../Assets/Images/Vercel_favicon-removebg-preview.png";
+import unifi from "../../../Assets/Images/unifi_icon-removebg-preview.png";
+import github from "../../../Assets/Images/github.512x500.png";
 
 const Skills = () => {
   const devIcons = [
@@ -28,6 +31,9 @@ const Skills = () => {
     { id: "10", img: endpoint },
     { id: "11", img: intune },
     { id: "12", img: ME },
+    { id: "13", img: vercel },
+    { id: "14", img: unifi },
+    { id: "15", img: github },
   ];
 
   return (
@@ -37,6 +43,7 @@ const Skills = () => {
     >
       <section className="Skills">
         <div className="vast-know">
+          <h3 style={{ color: "#8C89A2", textAlign: "center" }}>{"SKILLS"}</h3>
           <h1 style={{ color: "#3F3A64", fontWeight: "500" }}>
             {"I have vast knowledge in the following Technologies:"}
           </h1>

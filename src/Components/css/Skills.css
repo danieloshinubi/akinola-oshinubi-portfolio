@@ -58,9 +58,6 @@
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .full-skills {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: auto;
   }
   .Skills {
@@ -84,4 +81,19 @@
   }
 }
 @media (min-width: 1025px) and (max-width: 1400px) {
+  .full-skills {
+    height: auto;
+  }
+  .skill-checkbox {
+    width: 50%;
+  }
+  .skill-icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-icons img {
+    width: 80%;
+    height: 80%;
+  }
 }

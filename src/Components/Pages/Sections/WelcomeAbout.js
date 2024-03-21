@@ -3,6 +3,7 @@ import about_me_pic from "../../../Assets/Images/about me .jpg";
 import "../../css/WelcomeAbout.css";
 import { Link } from "react-router-dom";
 
+
 const WelcomeAbout = () => {
   const infoData = [
     { id: "Name: ", answer: "Akinola Daniel Oshinubi" },

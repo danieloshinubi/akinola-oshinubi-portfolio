@@ -3,6 +3,7 @@ import skill_checkbox from "../../../Assets/Images/skill-image.png";
 import "../../css/Skills.css";
 import html from "../../../Assets/Images/html.png";
 import css from "../../../Assets/Images/css-3.png";
+import tailwind from "../../../Assets/Images/tailwind.512x323.png";
 import javascript from "../../../Assets/Images/javascript.png";
 import reactjs from "../../../Assets/Images/react.png";
 import mySQL from "../../../Assets/Images/mysql.png";
@@ -11,11 +12,12 @@ import AD from "../../../Assets/Images/adbig-removebg-preview.png";
 import sophos from "../../../Assets/Images/sophos.512x512.png";
 import odoo from "../../../Assets/Images/odoo-removebg-preview.png";
 import endpoint from "../../../Assets/Images/endpoint_central-removebg-preview.png";
-import intune from "../../../Assets/Images/intuneportal.png";
+import intune from "../../../Assets/Images/microsoft-intune-removebg-preview.png";
 import ME from "../../../Assets/Images/MEdownload-removebg-preview.png";
 import vercel from "../../../Assets/Images/Vercel_favicon-removebg-preview.png";
 import unifi from "../../../Assets/Images/unifi_icon-removebg-preview.png";
 import github from "../../../Assets/Images/github.512x500.png";
+import azure from "../../../Assets/Images/Screen-Shot-2021-08-06-at-1.48.52-PM-removebg-preview.png";
 
 const Skills = () => {
   const devIcons = [
@@ -34,6 +36,8 @@ const Skills = () => {
     { id: "13", img: vercel },
     { id: "14", img: unifi },
     { id: "15", img: github },
+    { id: "16", img: azure },
+    { id: "17", img: tailwind },
   ];
 
   return (

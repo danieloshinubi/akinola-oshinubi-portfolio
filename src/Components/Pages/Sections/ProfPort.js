@@ -15,7 +15,7 @@ const ProfPort = () => {
         <h1 className="ProfPort-h1" style={{ color: "#3F3A64" }}>
           {"Transforming Ideas into Reality"}
         </h1>
-        <p className="ProfPort-p">
+        <p className="ProfPort-p" style={{color:"#696969"}}>
           {
             "As a highly skilled Developer and System Engineer, I have been passionately pursuing my career since 2021. With a strong focus on visual aesthetics and cutting-edge technologies, I have consistently delivered seamless user experiences. My portfolio showcases a diverse range of successful projects, demonstrating my expertise in both Engineering and Development. I invite you to explore my resume to gain a comprehensive understanding of my professional journey. Let's collaborate and bring your ideas to life!"
           }

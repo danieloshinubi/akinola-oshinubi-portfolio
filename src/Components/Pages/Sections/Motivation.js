@@ -8,7 +8,7 @@ const Motivation = () => {
     justifyContent: "Center",
     alignItems: "Center",
     secondDiv: {
-        width:"80%",
+      width: "80%",
       textAlign: "Center",
     },
   };
@@ -16,7 +16,7 @@ const Motivation = () => {
     <div style={styles}>
       <div style={styles.secondDiv}>
         <h3 style={{ color: "#8C89A2" }}>{"MOTIVATION"}</h3>
-        <h1 style={{ color: "#3F3A64" }}>
+        <h1 style={{ color: "#3F3A64", fontWeight: "400" }}>
           {"Driven by the Pursuit of Success"}
         </h1>
         <p style={{ color: "#696969" }}>

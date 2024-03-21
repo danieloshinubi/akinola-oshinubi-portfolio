@@ -58,17 +58,18 @@ const CertGallery = () => {
 
     cert_hThree: {
       color: "#8C89A2",
+      
     },
 
     cert_hOne: {
       color: "#3F3A64",
-      fontWeight: "500",
+      fontWeight: "400",
     },
 
     cert_section: {
       width: "80%",
       margin: "auto",
-      marginBottom:"10%"
+      marginBottom: "10%",
     },
   };
 

@@ -60,7 +60,7 @@ const ServicesSection = () => {
         <h3 className="ServicesSection-h3" style={{ color: "#8C89A2" }}>
           {"SERVICES"}
         </h3>
-        <h1 className="ServicesSection-h1" style={{ color: "#3F3A64" }}>
+        <h1 className="ServicesSection-h1" style={{ color: "#3F3A64",fontWeight:"400" }}>
           {"Turning Concepts into Tangible Solutions"}
         </h1>
       </div>

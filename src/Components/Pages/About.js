@@ -4,6 +4,7 @@ import WelcomeAbout from "./Sections/WelcomeAbout";
 import Skills from "./Sections/Skills";
 import Motivation from "./Sections/Motivation";
 import CertGallery from "./Sections/CertGallery";
+import Empower from "./Sections/Empower";
 
 function About() {
 
@@ -13,6 +14,7 @@ function About() {
       <WelcomeAbout/>
       <Skills/>
       <Motivation/>
+      <Empower/>
       <CertGallery/>
     </div>
   );

@@ -1,12 +1,9 @@
 /* TAGS WERE TAGGED IN THIS CSS FILE */
-/* @font-face {
-  font-family: jost;
-  src: url(../../../Jost-VariableFont_wght.ttf);
-} */
+
 .ServicesSection {
-  /* font-family: jost; */
+
   width: 80%;
-  /* display: block; */
+
   margin: auto;
   margin-bottom: 10%;
   margin-top: 5%;
@@ -20,7 +17,6 @@
   justify-content: space-between;
   align-items: center;
 
-  /* border-radius: 10px; */
 }
 .all-boxes {
   width: 372px;
@@ -62,16 +58,16 @@
 .read-more-link::after {
   content: "";
   position: absolute;
-  width: 100%; /* Adjust width as needed */
-  height: 2px; /* Adjust height as needed */
-  background-color: #7d11f9; /* Change color as desired */
-  bottom: 0; /* Position the underline at the bottom */
+  width: 100%; 
+  height: 2px;
+  background-color: #7d11f9; 
+  bottom: 0; 
   left: 0;
   margin: 0px 0;
 }
 .ServicesSection-h1 {
   font-size: 40px;
-  font-weight: 400;
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -82,7 +78,6 @@
   .all-boxes h1 {
     color: #3f3a64;
     font-size: 18px;
-    font-weight: 600;
   }
   .all-boxes {
     text-align: center;

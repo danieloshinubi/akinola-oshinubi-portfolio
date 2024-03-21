@@ -1,7 +1,6 @@
 /* TAGS WERE CALLED IN THIS CSS FILE img */
 .whole-about-intro {
   display: flex;
-
   width: 80%;
   margin: auto;
   justify-content: space-evenly;
@@ -23,7 +22,17 @@
   font-size: 40px;
   font-weight: 500;
 }
-
+.down-button-with-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.down-button-with-icons span {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .whole-about-intro {
     display: flex;
@@ -36,11 +45,20 @@
   }
   .word-side {
     width: 80%;
-  }.word-side-h1 {
+  }
+  .word-side-h1 {
     font-size: 32px;
     font-weight: 500;
   }
-  
+  .down-button-with-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .down-button-with-icons span {
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .whole-about-intro {
@@ -54,6 +72,15 @@
   }
   .word-side {
     width: 80%;
+  }
+  .down-button-with-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .down-button-with-icons span {
+
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -71,6 +98,14 @@
   }
   .word-side-h1 {
     font-size: 30px;
+  }
+  .down-button-with-icons {
+    width: 100%;
+
+  }
+  .down-button-with-icons span {
+    width: 45%;
+  
   }
 }
 @media (min-width: 1025px) and (max-width: 1400px) {

@@ -1,0 +1,63 @@
+.full-Empower {
+  background-color: rgba(147, 107, 232, 0.1);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Empower-Section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.Empower-Section-h3 {
+  font-size: 18px;
+}
+.Empower-Section-h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.Empower-Section-p {
+  font-size: 19.2px;
+}
+.Empower-Section-Second-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Empower-box {
+  width: 33.3%;
+}
+.Empower-icon {
+  width: 15%;
+  height: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .Empower-Section-Second-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .Empower-icon {
+    width: 30%;
+  }
+  .Empower-box {
+    width: 100%;
+  }
+  .Empower-Section-h1 {
+    font-size: 32px;
+  }.Empower-box h2{
+    font-weight: 500;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .Empower-icon {
+    width: 30%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+}

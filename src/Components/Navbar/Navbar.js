@@ -41,8 +41,8 @@ function Navbar() {
         </div>
       </div>
 
-      <div className={`nav-menu ${isOpen ? "is-open" : ""}`}>
-        <ul className={"nav-ul"} style={{ listStyle: "none", padding: "0" }}>
+      <div className={`nav-menu ${isOpen ? "is-open " : ""}`}>
+        <ul className={"nav-ul "} style={{ listStyle: "none", padding: "0" }}>
           {navigationLinks.map((link) => (
             <li key={link.path} className="nav-li">
               <Link

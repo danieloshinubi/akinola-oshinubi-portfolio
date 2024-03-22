@@ -27,7 +27,7 @@ const Empower = () => {
     <div className="full-Empower">
       <section className="Empower-Section">
         <h3 className="Empower-Section-h3" style={{ color: "#8C89A2" }}>
-          {"MAKE THAT MOVE!"}
+          {"LET'S COLLABORATE!"}
         </h3>
         <h1
           className="Empower-Section-h1"

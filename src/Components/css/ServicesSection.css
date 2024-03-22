@@ -36,6 +36,11 @@
   color: #3f3a64;
   opacity: 0.3;
 }
+.all-boxes p {
+   
+    color: #696969;
+
+  }
 .all-boxes img {
   width: 60px;
   height: 60px;

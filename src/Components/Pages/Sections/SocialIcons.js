@@ -119,12 +119,16 @@ const SocialIcons = () => {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "Center",
-      width:"80%"
+      width:"100%",
+      
+      
+      
     },
     li_styling: {
       display: "flex",
-    //   justifyContent: "space-between",
-    //   alignItems: "Center",
+      margin:"auto",
+      justifyContent: "space-between",
+      alignItems: "Center",
     },
   };
 
@@ -139,7 +143,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           case "02":
@@ -149,7 +153,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           case "03":
@@ -159,7 +163,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           case "04":
@@ -169,7 +173,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           case "05":
@@ -179,7 +183,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           case "06":
@@ -189,7 +193,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
           default:
@@ -199,7 +203,7 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li>{media.icon}</li>
+                <li style={styling.li_styling}>{media.icon}</li>
               </Link>
             );
         }

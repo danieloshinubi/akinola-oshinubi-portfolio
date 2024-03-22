@@ -10,11 +10,14 @@ import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Footer/Footer";
 import Services from "./Components/Pages/Services";
 
+import "./index.css";
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+
         <Routes>
           <Route path="/" Component={LandingPage} />
           <Route path="/Home" Component={LandingPage} />

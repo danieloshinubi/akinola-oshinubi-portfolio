@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { Divide as Hamburger } from "hamburger-react";
 
+
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
 

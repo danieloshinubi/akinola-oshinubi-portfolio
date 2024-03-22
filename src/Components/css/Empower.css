@@ -1,6 +1,6 @@
 .full-Empower {
   background-color: rgba(147, 107, 232, 0.1);
-  height: auto;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +50,27 @@
   }
   .Empower-Section-h1 {
     font-size: 32px;
-  }.Empower-box h2{
+  }
+  .Empower-box h2 {
     font-weight: 500;
+  }
+  .full-Empower {
+    height: auto;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .Empower-icon {
     width: 30%;
   }
+  .full-Empower {
+    height: auto;
+  }
+  .Empower-Section-h1 {
+    font-size: 32px;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .full-Empower {
+    height: auto;
+  }
 }

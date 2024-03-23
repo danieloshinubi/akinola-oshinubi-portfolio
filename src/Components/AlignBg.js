@@ -11,6 +11,7 @@ export class AlignBg extends Component {
       height: "350px",
 
       display: "flex",
+      flexDirection:"column",
       justifyContent: "Center",
       alignItems: "Center",
       homeWordStyle: {
@@ -29,6 +30,7 @@ export class AlignBg extends Component {
 
     return (
       <div style={styles}>
+        <h1 style={{ color: "#3F3A64",fontWeight:"600" }}>{this.props.title}</h1>
         <h2 style={styles.headerStyle}>
           <span style={styles.homeWordStyle}>Home</span>
           <span style={styles.pageWordStyle}>{">"}</span>

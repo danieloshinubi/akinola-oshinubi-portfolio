@@ -17,7 +17,7 @@ function Services() {
       id: "1",
       path: "/Services/Software-Development-and-Maintance",
       img: WebDev,
-      title: "Software Development and Maintenance",
+      title: "Software Development & Maintenance",
       parg: "I transform ideas into dynamic and interactive Softwares, ensuring a seamless user experience to help your business thrive online.",
       points: {
         pointOne: "Craft Modern Websites",
@@ -134,7 +134,7 @@ function Services() {
   );
   return (
     <div>
-      <AlignBg name={"Services"} />
+      <AlignBg name={"Services"} title={"Services"}/>
       <section className="Services">
         {ServiceDatainfo.map((service) => {
           if (service.id === "1") {
@@ -149,8 +149,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -177,8 +177,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -211,8 +211,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -240,8 +240,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -274,8 +274,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -302,8 +302,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}
@@ -336,8 +336,8 @@ function Services() {
                   </h1>
                   <p style={{ color: "#8C89A2" }}>{service.parg}</p>
                   <ul>
-                    {Object.keys(service.points).map((pointKey, index) => (
-                      <li key={index} className="the-li">
+                    {Object.keys(service.points).map((pointKey, i) => (
+                      <li key={i} className="the-li">
                         <span>{checkBox}</span>
                         <span style={{ marginLeft: "20px", color: "#3F3A64" }}>
                           {service.points[pointKey]}

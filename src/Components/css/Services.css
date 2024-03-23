@@ -1,3 +1,4 @@
+/* TAGS ARE TAGGED HERE! */
 .Services {
   width: 85%;
   margin: auto;
@@ -52,11 +53,9 @@
 }
 .Service-word-div-left {
   width: 50%;
-
 }
 .Service-word-div-right {
   width: 50%;
-
 }
 .Service-word-div-left ul {
   padding: 0;
@@ -92,6 +91,13 @@
     width: 100%;
     height: auto;
     margin-bottom: 20%;
+    /* text-align: center; */
+  }
+  .Services-div-left h1 {
+    text-align: center;
+  }
+  .Services-div-right h1 {
+    text-align: center;
   }
   .Service-img-div-left {
     width: 100%;
@@ -129,6 +135,12 @@
     width: 100%;
     height: auto;
   }
+  .Services-div-left h1 {
+    text-align: center;
+  }
+  .Services-div-right h1 {
+    text-align: center;
+  }
   .Service-img-div-left {
     width: 100%;
   }
@@ -149,6 +161,9 @@
   }
   .Service-img-div-right {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .Service-word-div-right {
     width: 90%;
@@ -158,20 +173,50 @@
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .Services-div-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .Services-div-right {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .Service-img-div-left {
+    width: 100%;
+  }
+  .Service-img-div-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .Service-word-div-left {
-    width: 50%;
+    width: 90%;
     line-height: 1.7rem;
   }
   .Service-word-div-right {
-    width: 50%;
+    width: 90%;
     line-height: 1.7rem;
   }
   .span-arrange {
-    width: 35%;
+    width: 20%;
   }
   .Services {
     width: 90%;
     font-size: 18px;
+  }
+  .Services-div-left h1 {
+    text-align: center;
+  }
+  .Service-img-div-left img {
+    height: 390px;
+  }
+  .Service-img-div-right img {
+    height: 390px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1400px) {

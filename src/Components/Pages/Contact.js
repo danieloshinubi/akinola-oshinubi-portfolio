@@ -4,7 +4,7 @@ import AlignBg from "../AlignBg";
 function Contact() {
   return (
     <div>
-      <AlignBg name={"Contact"} />
+      <AlignBg name={"Contact"} title={"Contact"} />
     </div>
   );
 }

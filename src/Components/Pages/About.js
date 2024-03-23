@@ -10,7 +10,7 @@ import ProjectSection from "./Sections/ProjectSection";
 function About() {
   return (
     <div className="About">
-      <AlignBg name={"About"} />
+      <AlignBg name={"About"} title={"About"}/>
       <WelcomeAbout />
       <Skills />
       <Motivation />

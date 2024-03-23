@@ -41,6 +41,10 @@
   justify-content: center;
   align-items: center;
   height: 700px;
+  /* background-image: url(../../Assets/Gif/Hello\ there.gif);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; */
 }
 .IntroSection {
   display: flex;

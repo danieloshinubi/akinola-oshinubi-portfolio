@@ -12,9 +12,9 @@ const ServicesSection = () => {
   const servicesData = [
     {
       id: "01",
-      title: "Web Development & Maintenance",
+      title: "Software Development & Maintenance",
       description:
-        "I transform ideas into dynamic and interactive websites, ensuring a seamless user experience to help your business thrive online.",
+        "I transform ideas into dynamic and interactive Softwares, ensuring a seamless user experience to help your business thrive online.",
       image: web_dev,
     },
     {

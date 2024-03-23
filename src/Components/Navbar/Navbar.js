@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { Divide as Hamburger } from "hamburger-react";
 
-
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
 
@@ -29,13 +28,15 @@ function Navbar() {
     return {};
   };
 
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
     <nav className="Navbar">
       <div className="Nav-imgLink">
-        {" "}
         <Link to="/Home" style={{ textDecoration: "none", color: "#E83E8C" }}>
           <h1 className="Nav-imgLink-h1">AKINOLA OSHINUBI</h1>
-          {/* <img src={me_in_trad} alt="dev-icon" className="nav-image" /> */}
         </Link>
         <div className="nav-hamburger">
           <Hamburger onClick={toggleMenu} toggled={isOpen} toggle={setOpen} />
@@ -50,6 +51,7 @@ function Navbar() {
                 to={link.path}
                 className="navLink"
                 style={getActiveLinkStyle(link)}
+                onClick={handleLinkClick} 
               >
                 {link.text}
               </Link>

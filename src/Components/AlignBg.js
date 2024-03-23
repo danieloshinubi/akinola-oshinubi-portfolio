@@ -8,7 +8,7 @@ export class AlignBg extends Component {
       background: " rgba(147, 107, 232, 0.1)",
       //   fontSize: "18px",
       width: "100%",
-      height: "300px",
+      height: "350px",
 
       display: "flex",
       justifyContent: "Center",

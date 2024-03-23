@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState } from "react";
 import freeCodeCamp from "../../../Assets/Images/Certificates/freeCodeCamp-Responsive webdesign.png";
 import GDSC_Weeks_bootcamp from "../../../Assets/Images/Certificates/GDSC-3 Weeks Bootcamp.jpg";
 import NH from "../../../Assets/Images/Certificates/New Horizon Certificate.jpg";
@@ -14,6 +13,7 @@ import SkillUp from "../../../Assets/Images/Certificates/SkillUp(SimpliLearn)-Re
 import scalar from "../../../Assets/Images/Certificates/Scaler - React JS.png";
 
 const CertGallery = () => {
+  const [showAll, setShowAll] = useState(false);
   const certData = [
     { id: "01", img: freeCodeCamp },
     { id: "02", img: GDSC_Weeks_bootcamp },
@@ -58,7 +58,6 @@ const CertGallery = () => {
 
     cert_hThree: {
       color: "#8C89A2",
-      
     },
 
     cert_hOne: {
@@ -85,8 +84,12 @@ const CertGallery = () => {
           }
         </h1>
         <div className="cert-div-boxes" style={CertStyles.certBoxes}>
-          {certData.map((cert) => (
-            <div className="cert-div-img" style={CertStyles.cert_Boxes_Div}>
+          {certData.slice(0, showAll ? certData.length : 3).map((cert) => (
+            <div
+              className="cert-div-img"
+              style={CertStyles.cert_Boxes_Div}
+              key={cert.id}
+            >
               <img
                 src={cert.img}
                 alt="Certificate description"
@@ -96,6 +99,23 @@ const CertGallery = () => {
             </div>
           ))}
         </div>
+        {showAll ? (
+          <button
+            className="resume-button"
+            onClick={() => setShowAll(false)}
+            style={{ marginTop: "20px",  margin: "auto" }}
+          >
+            Show Less
+          </button>
+        ) : (
+          <button
+            className="resume-button"
+            onClick={() => setShowAll(true)}
+            style={{ marginTop: "20px", margin: "auto" }}
+          >
+            Show More
+          </button>
+        )}
       </section>
     </div>
   );

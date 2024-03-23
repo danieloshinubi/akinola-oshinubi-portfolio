@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const SocialIcons = () => {
+const SocialIcons = ({ index }) => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const Socials = [
     {
       id: "01",
@@ -114,21 +115,22 @@ const SocialIcons = () => {
     textDecoration: "none",
     listStyle: "none",
     color: "#696969",
- 
+
     ul_styling: {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "Center",
-      width:"100%",
-      
-      
-      
+      padding: "0",
+      width: "100%",
     },
     li_styling: {
       display: "flex",
-      margin:"auto",
+      margin: "auto",
       justifyContent: "space-between",
       alignItems: "Center",
+    },
+    li_styling_hover: {
+      color: "#3f3a64", // Change background color on hover
     },
   };
 
@@ -141,9 +143,19 @@ const SocialIcons = () => {
               <Link
                 to="https://www.linkedin.com/in/akinolaoshinubi/"
                 style={styling}
-                key={media.id}
+                key={media.id}  onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }}
+                //   onMouseEnter={() => setHoveredIndex(index)}
+                //   onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           case "02":
@@ -153,7 +165,16 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           case "03":
@@ -163,7 +184,16 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           case "04":
@@ -173,7 +203,15 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }} onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           case "05":
@@ -183,7 +221,15 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }} onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           case "06":
@@ -193,7 +239,15 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }} onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
           default:
@@ -203,7 +257,15 @@ const SocialIcons = () => {
                 style={styling}
                 key={media.id}
               >
-                <li style={styling.li_styling}>{media.icon}</li>
+                <li
+                  style={{
+                    ...styling.li_styling,
+                    ...(hoveredIndex === index && styling.li_styling_hover),
+                  }} onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {media.icon}
+                </li>
               </Link>
             );
         }

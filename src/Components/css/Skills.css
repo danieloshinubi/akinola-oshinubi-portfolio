@@ -24,14 +24,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: popOut 0.3s ease forwards;
+  opacity: 0;
 }
 
+@keyframes popOut {
+  100% {
+    opacity: 1;
+  }
+}
 .skill-icons img {
   width: 50%;
   height: 50%;
 }
 .skill-checkbox {
   width: 80%;
+  max-width: 50%;
+
+  /* position: absolute; */
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Skills {

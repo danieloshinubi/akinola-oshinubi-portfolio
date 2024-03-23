@@ -27,9 +27,7 @@ const AboutMeSection = () => {
         <Link to="/Projects" style={{ textDecoration: "none" }}>
           <button
             className="resume-button"
-            style={{
-              color: "#ffffff",
-            }}
+
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

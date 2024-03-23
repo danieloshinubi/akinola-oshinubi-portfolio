@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import skill_checkbox from "../../../Assets/Images/skill-image.png";
 import "../../css/Skills.css";
 import html from "../../../Assets/Images/html.png";
@@ -20,7 +20,9 @@ import github from "../../../Assets/Images/github.512x500.png";
 import azure from "../../../Assets/Images/Screen-Shot-2021-08-06-at-1.48.52-PM-removebg-preview.png";
 
 const Skills = () => {
-  const devIcons = [
+  const [visibleIcons, setVisibleIcons] = useState(false);
+
+  const devIcons = useMemo(()=>[
     { id: "1", img: html },
     { id: "2", img: css },
     { id: "3", img: javascript },
@@ -38,7 +40,21 @@ const Skills = () => {
     { id: "15", img: github },
     { id: "16", img: azure },
     { id: "17", img: tailwind },
-  ];
+],[]) 
+
+  useEffect(() => {
+    let timer;
+    if (!visibleIcons) {
+      timer = setTimeout(() => {
+        setVisibleIcons(true);
+      }, 500);
+    } else {
+      timer = setTimeout(() => {
+        setVisibleIcons(false);
+      }, 300 * devIcons.length + 500);
+    }
+    return () => clearTimeout(timer);
+  }, [visibleIcons, devIcons]);
 
   return (
     <div
@@ -53,11 +69,16 @@ const Skills = () => {
           </h1>
 
           <div className="arrange">
-            {devIcons.map((icon) => (
-              <div className="skill-icons">
-                <img src={icon.img} alt="" />
-              </div>
-            ))}
+            {visibleIcons &&
+              devIcons.map((icon, index) => (
+                <div
+                  className="skill-icons"
+                  key={icon.id}
+                  style={{ animationDelay: `${index * 0.3}s` }}
+                >
+                  <img src={icon.img} alt="" />
+                </div>
+              ))}
           </div>
         </div>
         <img src={skill_checkbox} alt="" className="skill-checkbox" />

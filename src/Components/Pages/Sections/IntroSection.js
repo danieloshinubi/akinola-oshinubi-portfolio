@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 const IntroSection = () => {
   return (
-    <div className="full-IntroSection" style={{ backgroundColor: " rgba(147, 107, 232, 0.1)" }}>
+    <div
+      className="full-IntroSection"
+      style={{ backgroundColor: " rgba(147, 107, 232, 0.1)" }}
+    >
       <section className="IntroSection">
         <div className="left-IntroSection">
           <h3 style={{ color: "#8C89A2" }}>HI THERE!</h3>
@@ -17,7 +20,10 @@ const IntroSection = () => {
             </b>
             {"   Software Developer & System Engineer"}
           </p>
-          <p className="left-IntroSection-second-p" style={{ color: "#8c89a2" }}>
+          <p
+            className="left-IntroSection-second-p"
+            style={{ color: "#8c89a2" }}
+          >
             {"A highly"} <b> {"organized, innovative"}</b>, {"and "}
             <b>{"goal-driven"}</b> {" graduate with "}
             <b>{"exceptional communication, problem-solving,"}</b> {"and"}
@@ -28,7 +34,10 @@ const IntroSection = () => {
             </span>
           </p>
           <Link to="/Projects" style={{ textDecoration: "none" }}>
-            <button className="left-IntroSection-second-button" style={{ color: "#ffffff" }}>
+            <button
+              className="left-IntroSection-second-button"
+              style={{ color: "#ffffff" }}
+            >
               {"See Projects"}
             </button>
           </Link>

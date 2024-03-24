@@ -27,8 +27,8 @@ const ProjectSection = () => {
       word: "FAQs (Frequently Asked Questions) are used on a website to provide answers to common queries or concerns that users may have about a product, service, or topic. ",
     },
   ];
-  
-// Declared the SVG here, in order to remove redundancy when calling it later in the code 
+
+  // Declared the SVG here, in order to remove redundancy when calling it later in the code
 
   var ArrowUp = (
     <div style={{ width: "20px", height: "20px" }}>
@@ -125,7 +125,8 @@ const ProjectSection = () => {
             }
           })}
         </div>
-        ;
+        <Link to="/Projects" style={{textDecoration:"none"}}>
+        <button className="resume-button"  style={{ marginTop: "5%",  margin: "auto" }}>{"View more Projects"}</button></Link>
       </section>
     </div>
   );

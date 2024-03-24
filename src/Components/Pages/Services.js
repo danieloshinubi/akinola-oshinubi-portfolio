@@ -93,7 +93,7 @@ function Services() {
       path: "/Services/Enterprise-Resource-Planning",
       img: erp,
       title: "Enterprise Resource Planning (ERP)",
-      parg: "I provide reliable IT support, acting as your trusted partner to troubleshoot tech issues, maintain smooth operations, and maximize your organization's productivity.",
+      parg: "Help businesses manage and integrate their essential operations.",
       points: {
         pointOne: "Inventory management",
         pointTwo: "Customer Relationship Management (CRM)",

@@ -1,9 +1,7 @@
 /* TAGS WERE TAGGED IN THIS CSS FILE */
 
 .ServicesSection {
-
   width: 80%;
-
   margin: auto;
   margin-bottom: 10%;
   margin-top: 5%;
@@ -16,7 +14,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 .all-boxes {
   width: 372px;
@@ -37,10 +34,8 @@
   opacity: 0.3;
 }
 .all-boxes p {
-   
-    color: #696969;
-
-  }
+  color: #696969;
+}
 .all-boxes img {
   width: 60px;
   height: 60px;
@@ -63,16 +58,15 @@
 .read-more-link::after {
   content: "";
   position: absolute;
-  width: 100%; 
+  width: 100%;
   height: 2px;
-  background-color: #7d11f9; 
-  bottom: 0; 
+  background-color: #7d11f9;
+  bottom: 0;
   left: 0;
   margin: 0px 0;
 }
 .ServicesSection-h1 {
   font-size: 40px;
-
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -101,6 +95,4 @@
     margin: auto;
     margin-bottom: 10%;
   }
-}
-@media (min-width: 1025px) and (max-width: 1400px) {
 }

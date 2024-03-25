@@ -10,7 +10,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(147, 107, 232, 0.1); */
   border-radius: 2vw;
   width: 90%;
   height: 350px;
@@ -21,7 +20,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgba(147, 107, 232, 0.1); */
   border-radius: 2vw;
   width: 90%;
   height: 350px;
@@ -91,7 +89,6 @@
     width: 100%;
     height: auto;
     margin-bottom: 20%;
-    /* text-align: center; */
   }
   .Services-div-left h1 {
     text-align: center;

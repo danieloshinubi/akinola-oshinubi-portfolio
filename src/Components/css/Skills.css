@@ -40,8 +40,6 @@
 .skill-checkbox {
   width: 80%;
   max-width: 50%;
-
-  /* position: absolute; */
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Skills {
@@ -90,7 +88,6 @@
   }
   .vast-know {
     width: 50%;
-    /* line-height: 1rem; */
   }
 }
 @media (min-width: 1025px) and (max-width: 1400px) {
@@ -104,7 +101,6 @@
     width: 50px;
     height: 50px;
   }
-
   .skill-icons img {
     width: 80%;
     height: 80%;

@@ -19,7 +19,10 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log("SUCCESS!", result.text);
+          alert(
+            "Thank you for reachout to me, I'd make sure I get back to you as soon as I can, Have a Great Day😁",
+            result.text
+          );
         },
         (error) => {
           console.log("FAILED...", error.text);

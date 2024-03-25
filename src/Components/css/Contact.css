@@ -1,0 +1,157 @@
+/* Form Tag is called in this css  */
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.Contact-img-div {
+  width: 50%;
+}
+.Contact-word-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 90%;
+}
+.client-input {
+  height: 35px;
+  margin-bottom: 5%;
+  border: none;
+  width: 240px;
+  background-color: rgba(147, 107, 232, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  /* margin: 5px; */
+}
+
+.justify-span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textArea-message {
+  width: 530px;
+  height: 100px;
+  background-color: rgba(147, 107, 232, 0.1);
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 5%;
+  border: none;
+}
+.contact-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .Contact-img-div {
+    width: 85%;
+  }
+  .Contact-image {
+    width: 100%;
+  }
+  .Contact-word-div {
+    width: 100%;
+  }
+  .justify-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea-message {
+    width: 90%;
+  }
+  form {
+    width: 85%;
+    margin-top: 30%;
+  }
+  .client-input {
+    width: 90%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .Contact-img-div {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Contact-image {
+    width: 85%;
+  }
+  .Contact-word-div {
+    width: 100%;
+  }
+  .justify-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea-message {
+    width: 90%;
+  }
+  form {
+    width: 85%;
+    margin-top: 15%;
+  }
+  .client-input {
+    width: 90%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Contact {
+    width: 90%;
+  }
+  .Contact-img-div {
+    width: 50%;
+  }
+  .Contact-image {
+    width: 90%;
+  }
+  .client-input {
+    height: 20px;
+    width: 43%;
+  }
+  .textArea-message {
+    width: 96%;
+    height: 100px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .Contact {
+    width: 90%;
+  }
+  .Contact-img-div {
+    width: 50%;
+  }
+  .Contact-image {
+    width: 90%;
+  }
+  .client-input {
+    height: 20px;
+    width: 43%;
+  }
+  .textArea-message {
+    width: 96%;
+    height: 100px;
+  }
+}

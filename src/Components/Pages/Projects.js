@@ -8,6 +8,8 @@ import TechTrybe from "../../Assets/Images/TechTrybe.png";
 import Google from "../../Assets/Images/Google Front Page.png";
 import TekkTopia from "../../Assets/Images/TekkTopia.png";
 import { Link } from "react-router-dom";
+import ai from "../../Assets/Images/AI-powered Chabot.png";
+import metro from "../../Assets/Images/MetroGasOnline.png";
 
 function Projects() {
   const ReadMore = "View Project";
@@ -47,6 +49,18 @@ function Projects() {
       img: TekkTopia,
       title: "Tekk Topia Official Website ",
       word: "Showing their brand, products and services to attract customers with informative content.",
+    },
+    {
+      id: "7",
+      img: ai,
+      title: "AI-Powered Chatbot ",
+      word: "AI-Powered Chabot For Customer Support that provides efficient and accurate customer support by understanding and responding to user queries.",
+    },
+    {
+      id: "8",
+      img: metro,
+      title: "Metro Gas Online ",
+      word: "Online Ordering and Delivery System.",
     },
   ];
 
@@ -169,7 +183,7 @@ function Projects() {
                   </Link>
                 </div>
               );
-            } else {
+            } else if (project.id === "6") {
               return (
                 <div className="project-box" key={project.id}>
                   <Link to="https://tekk-topia-official.vercel.app/">
@@ -188,7 +202,46 @@ function Projects() {
                   </Link>
                 </div>
               );
+            } else if (project.id === "7") {
+              return (
+                <div className="project-box" key={project.id}>
+                  <Link to="https://amazone-chatbot.netlify.app/">
+                    <img alt="" src={project.img} className="project-img" />{" "}
+                  </Link>
+                  <div className="project-arrange">
+                    <h2 className="project-h2">{project.title}</h2>
+                    <p className="project-p">{project.word}</p>
+                  </div>
+                  <Link
+                    to="https://amazone-chatbot.netlify.app/"
+                    className="project-Link"
+                  >
+                    {ReadMore}
+                    {ArrowUp}
+                  </Link>
+                </div>
+              );
+            } else if (project.id === "8") {
+              return (
+                <div className="project-box" key={project.id}>
+                  <Link to="https://metro-gas-shop-and-deliver.vercel.app/">
+                    <img alt="" src={project.img} className="project-img" />{" "}
+                  </Link>
+                  <div className="project-arrange">
+                    <h2 className="project-h2">{project.title}</h2>
+                    <p className="project-p">{project.word}</p>
+                  </div>
+                  <Link
+                    to="https://metro-gas-shop-and-deliver.vercel.app/"
+                    className="project-Link"
+                  >
+                    {ReadMore}
+                    {ArrowUp}
+                  </Link>
+                </div>
+              );
             }
+            return null;
           })}
         </div>
       </section>
